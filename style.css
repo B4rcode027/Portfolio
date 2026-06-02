@@ -1,0 +1,182 @@
+/* Variáveis de cores para o Modo Escuro */
+:root {
+    --fundo-principal: #121212;
+    --fundo-secundario: #1e1e1e;
+    --texto-principal: #ffffff;
+    --texto-secundario: #a0a0a0;
+    --cor-destaque: #00adb5; /* Um tom de ciano para links/detalhes */
+}
+
+/* Reset básico e configurações do corpo da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+}
+
+/* Estilização do Cabeçalho */
+header {
+    text-align: center; /* Centraliza o nome e a profissão */
+    padding: 20px 0;
+}
+
+header p {
+    color: var(--texto-secundario);
+    margin-bottom: 20px;
+}
+
+/* A faixa atrás dos links */
+nav {
+    background-color: var(--fundo-secundario);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap; /* Permite quebrar linha se faltar espaço */
+        justify-content: center; /* Mantém tudo centralizado */
+        gap: 15px; /* Ajusta levemente o espaço entre os itens */
+    }
+
+    .theme-btn {
+        width: 100%; /* Faz o botão ocupar a largura total no topo se a linha quebrar */
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+/* Estilização dos links do menu */
+nav a {
+    color: var(--texto-principal);
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: 500;
+    transition: color 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse (Hover) */
+nav a:hover {
+    color: var(--cor-destaque); /* Muda para o ciano que definimos */
+}
+
+/* Seção de Projetos - Forçando o empilhamento vertical */
+#projetos {
+    padding: 40px 0;
+    display: flex !important; /* Força o uso do Flexbox */
+    flex-direction: column !important; /* Força os itens a ficarem em coluna (um abaixo do outro) */
+    gap: 20px; /* Cria o espaço entre os cards de forma consistente */
+}
+
+/* Os cards dos projetos */
+#projetos article {
+    background-color: var(--fundo-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-destaque);
+    width: 100%; /* Ocupa toda a largura da tela */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do card */
+}
+
+/* Ajuste para telas maiores: quando houver espaço, eles ficam lado a lado */
+@media (min-width: 600px) {
+    #projetos {
+        display: flex;
+        gap: 20px;
+    }
+    
+    #projetos article {
+        flex: 1; /* Faz com que os dois projetos tenham o mesmo tamanho */
+        margin-bottom: 0;
+    }
+}
+
+/* Estilização das linhas divisórias */
+hr {
+    border: none; /* Remove a borda padrão tridimensional */
+    height: 1px; /* Define uma espessura bem fina */
+    background: linear-gradient(to right, transparent, var(--cor-destaque), transparent); /* Cria um efeito de linha que esmaece nas pontas */
+    margin: 40px 0; /* Dá um espaçamento limpo entre as seções */
+}
+
+/* Seção de Contato */
+#contato ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    display: flex; /* Alinha os blocos lado a lado */
+    flex-wrap: wrap; /* Permite que os botões quebrem de linha em telas menores */
+    gap: 15px; /* Espaço entre os blocos */
+    padding: 0;
+    margin-top: 20px;
+}
+
+#contato li a {
+    display: inline-block;
+    background-color: var(--fundo-secundario); /* Cor de fundo do bloco */
+    color: var(--texto-principal);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px; /* Cantos suavemente arredondados */
+    border: 1px solid dashed; /* Uma borda sutil */
+    border-color: var(--texto-secundario);
+    transition: all 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+/* Efeito ao passar o mouse nos blocos de contato */
+#contato li a:hover {
+    background-color: var(--cor-destaque); /* Fundo vira ciano */
+    color: var(--fundo-principal); /* Texto fica escuro para dar contraste */
+    transform: translateY(-3px); /* Move o botão levemente para cima */
+}
+
+/* Estilização do Rodapé */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--texto-secundario);
+    font-size: 0.9rem; /* Texto ligeiramente menor */
+}
+
+/* Paleta Padrão: Modo Escuro */
+:root {
+    --fundo-principal: #121212;
+    --fundo-secundario: #1e1e1e;
+    --texto-principal: #ffffff;
+    --texto-secundario: #a0a0a0;
+    --cor-destaque: #00adb5;
+}
+
+/* Paleta Alternativa: Modo Claro */
+/* Quando o body tiver a classe .light-mode, estas variáveis entram em ação */
+body.light-mode {
+    --fundo-principal: #f9f9f9;
+    --fundo-secundario: #ffffff;
+    --texto-principal: #121212;
+    --texto-secundario: #555555;
+    --cor-destaque: #007a87; /* Um tom de ciano ligeiramente mais escuro para garantir contraste no fundo claro */
+}
+
+/* Estilização básica do botão de tema */
+.theme-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.2); /* Um leve efeito de zoom ao passar o mouse */
+}

@@ -31,3 +31,14 @@ Se quiser clonar este projeto e dar uma olhada no código de perto, siga os pass
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/GabrielPereiraFreire/Portfolio.git](https://github.com/GabrielPereiraFreire/Portfolio.git)
+
+   📬 Contato
+Vamos conversar? Você pode me encontrar em qualquer um dos canais abaixo:
+
+LinkedIn: Gabriel Pereira
+
+E-mail: gpereira2019@gmail.com
+
+Instagram: @gb_gb_freire
+
+Desenvolvido com 💜 por Gabriel Pereira.

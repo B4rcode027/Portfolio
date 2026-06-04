@@ -30,7 +30,7 @@ Se quiser clonar este projeto e dar uma olhada no código de perto, siga os pass
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/GabrielPereiraFreire/Portfolio.git](https://github.com/GabrielPereiraFreire/Portfolio.git)
+   git clone https://github.com/B4rcode027/Portfolio.git](https://github.com/B4rcode027/Portfolio.git)
 
    📬 Contato
 Vamos conversar? Você pode me encontrar em qualquer um dos canais abaixo:

@@ -2,7 +2,7 @@
 
 Olá! Este é o repositório do meu portfólio pessoal, um espaço onde apresento meus principais projetos, minhas habilidades técnicas e um pouco sobre a minha trajetória no desenvolvimento de software.
 
-O site está publicado e pode ser acessado em: **https://gabrielpereirafreire.github.io/Portfolio/**
+O site está publicado e pode ser acessado em: **b4rcode027.github.io/Portfolio/**
 
 ---
 

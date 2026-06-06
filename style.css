@@ -180,3 +180,12 @@ body.light-mode {
 .theme-btn:hover {
     transform: scale(1.2); /* Um leve efeito de zoom ao passar o mouse */
 }
+
+.prime {
+    color: #f9f9f9  ;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}

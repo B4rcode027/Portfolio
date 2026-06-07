@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Gabriel Pereira, Desenvolvedor Web em formação. Conheça meus projetos e habilidades.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seu-portfolio.com/"> 
+    <meta property="og:title" content="Portfólio Gabriel | Dev Web">
+    <meta property="og:description" content="Dando os primeiros passos no desenvolvimento web. Confira meus projetos!">
+    <meta property="og:image" content="./primelar.jpeg">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./icone.jpeg">
     <title>Portfólio Gabriel</title>
@@ -13,68 +21,78 @@
         <h1>Portfólio Gabriel</h1>
         <p>Desenvolvedor Web em Formação</p>
         <nav>
-            <button id="toggle-theme" class="theme-btn">🌙</button>
+            <button id="toggle-theme" class="theme-btn" aria-label="Alternar tema">🌙</button>
             <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
 
-    <hr> <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Sou um entusiasta da tecnologia dando os meus primeiros passos no desenvolvimento web. Atualmente estou focado em dominar o HTML5 para criar estruturas de páginas sólidas e semânticas.</p>
+    <main>
         
-        <br>
-        
-        <h3>Minhas Habilidades:</h3>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou um entusiasta da tecnologia dando os meus primeiros passos no desenvolvimento web. Atualmente estou focado em dominar o HTML5 para criar estruturas de páginas sólidas e semânticas.</p>
+            
+            <h3>Tecnologias e Ferramentas:</h3>
+            <div class="tech-badges">
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">JavaScript (Básico)</span>
+                <span class="badge">Git & GitHub</span>
+            </div>
 
-        <ul>
-            <li>HTML5 (Estruturação de conteúdo)</li>
-            <li>Lógica de programação</li>
-            <li>Resolução de problemas</li>
-            <li>Vontade de aprender</li>
-            <li>Básico em JavaScript</li>
-        </ul>
-    </section>
+            <h3>Minhas Habilidades:</h3>
+            <ul>
+                <li>HTML5 (Estruturação de conteúdo)</li>
+                <li>Lógica de programação</li>
+                <li>Resolução de problemas</li>
+                <li>Vontade de aprender</li>
+                <li>Básico em JavaScript</li>
+            </ul>
+        </section>
 
-    <hr>
+        <hr>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <p>Aqui estão alguns dos projetos que desenvolvi durante meus estudos:</p>
-        
-        <article>
-            <h3>1. Prime Lar Imobiliaria</h3>
-            <p>Como primeiro projeto, desenvolvi um site para uma imobiliária, focado em apresentar imóveis de forma clara e eficiente.</p>
-            <p>Site <a class="prime" href="https://prime.rebonato.com.br/" target="_blank">Prime Lar</a> para vizualização</p>
-            <br>
-            <img class="img" src="./primelar.jpeg" alt="">
-        </article>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <p>Aqui estão alguns dos projetos que desenvolvi durante meus estudos:</p>
+            
+            <div class="projetos-container">
+                <article>
+                    <h3>1. Prime Lar Imobiliaria</h3>
+                    <p>Como primeiro projeto, desenvolvi um site para uma imobiliária, focado em apresentar imóveis de forma clara e eficiente.</p>
+                    <p class="legenda-link">Site Prime para visualização (clique na imagem para acessar):</p>
+                    <a class="link" href="https://prime.rebonato.com.br/" target="_blank" rel="noopener noreferrer">
+                        <img class="img" src="./primelar.jpeg" alt="Print da tela inicial do site Prime Lar Imobiliária">
+                    </a>
+                </article>
 
-        <article>
-            <h3>2. Este Portfólio Pessoal</h3>
-            <p>Pensando em publicar meus projetos e experiências, desenvolvi este portfólio para compartilhar meu trabalho com a comunidade.</p>
-        </article>
+                <article>
+                    <h3>2. Este Portfólio Pessoal</h3>
+                    <p>Pensando em publicar meus projetos e experiências, desenvolvi este portfólio para compartilhar meu trabalho com a comunidade.</p>
+                </article>
 
-        <article>
-            <h3>3. Casa Do Chefe</h3>
-            <p>Ainda em produção, já conta com um projeto mais complexo do que os demais já feitos</p>
-        </article>
-    </section>
+                <article>
+                    <h3>3. Casa Do Chefe</h3>
+                    <p>Ainda em produção, já conta com um projeto mais complexo do que os demais já feitos.</p>
+                </article>
+            </div>
+        </section>
 
-    <hr>
+        <hr>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Se você quiser conversar sobre tecnologia ou acompanhar minha jornada, me encontre em:</p>
-        <ul>
-            <li><a href="mailto:gpereira2019@gmail.com">E-mail</a></li>
-            <li><a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/gabriel-pereira-27272216a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        </ul>
-    </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Se você quiser conversar sobre tecnologia ou acompanhar minha jornada, me encontre em:</p>
+            <ul>
+                <li><a href="mailto:gpereira2019@gmail.com">E-mail</a></li>
+                <li><a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/gabriel-pereira-27272216a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </section>
 
-    <hr>
+    </main>
 
     <footer class="footer">
         <p>&copy; 2026 Gabriel Pereira. Todos os direitos reservados.</p>

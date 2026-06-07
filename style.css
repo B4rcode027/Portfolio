@@ -1,13 +1,24 @@
-/* Variáveis de cores para o Modo Escuro */
+/* 1. CONFIGURAÇÕES GLOBAIS E VARIÁVEIS */
 :root {
     --fundo-principal: #121212;
     --fundo-secundario: #1e1e1e;
     --texto-principal: #ffffff;
     --texto-secundario: #a0a0a0;
-    --cor-destaque: #00adb5; /* Um tom de ciano para links/detalhes */
+    --cor-destaque: #00adb5; 
 }
 
-/* Reset básico e configurações do corpo da página */
+body.light-mode {
+    --fundo-principal: #f9f9f9;
+    --fundo-secundario: #ffffff;
+    --texto-principal: #121212;
+    --texto-secundario: #555555;
+    --cor-destaque: #007a87;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,12 +32,12 @@ body {
     line-height: 1.6;
     padding: 20px;
     max-width: 800px;
-    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    margin: 0 auto;
 }
 
-/* Estilização do Cabeçalho */
+/* 2. HEADER E COMPONENTES */
 header {
-    text-align: center; /* Centraliza o nome e a profissão */
+    text-align: center;
     padding: 20px 0;
 }
 
@@ -35,7 +46,6 @@ header p {
     margin-bottom: 20px;
 }
 
-/* A faixa atrás dos links */
 nav {
     background-color: var(--fundo-secundario);
     padding: 12px;
@@ -45,130 +55,17 @@ nav {
     gap: 20px;
 }
 
-/* Responsividade para celulares */
-@media (max-width: 600px) {
-    nav {
-        flex-wrap: wrap; /* Permite quebrar linha se faltar espaço */
-        justify-content: center; /* Mantém tudo centralizado */
-        gap: 15px; /* Ajusta levemente o espaço entre os itens */
-    }
-
-    .theme-btn {
-        width: 100%; /* Faz o botão ocupar a largura total no topo se a linha quebrar */
-        text-align: center;
-        margin-bottom: 5px;
-    }
-}
-
-/* Estilização dos links do menu */
 nav a {
     color: var(--texto-principal);
-    text-decoration: none; /* Remove o sublinhado padrão */
-    font-weight: 500;
-    transition: color 0.3s; /* Efeito suave ao passar o mouse */
-}
-
-/* Efeito ao passar o mouse (Hover) */
-nav a:hover {
-    color: var(--cor-destaque); /* Muda para o ciano que definimos */
-}
-
-/* Seção de Projetos - Forçando o empilhamento vertical */
-#projetos {
-    padding: 40px 0;
-    display: flex !important; /* Força o uso do Flexbox */
-    flex-direction: column !important; /* Força os itens a ficarem em coluna (um abaixo do outro) */
-    gap: 20px; /* Cria o espaço entre os cards de forma consistente */
-}
-
-/* Os cards dos projetos */
-#projetos article {
-    background-color: var(--fundo-secundario);
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid var(--cor-destaque);
-    width: 100%; /* Ocupa toda a largura da tela */
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do card */
-}
-
-/* Ajuste para telas maiores: quando houver espaço, eles ficam lado a lado */
-@media (min-width: 600px) {
-    #projetos {
-        display: flex;
-        gap: 20px;
-    }
-    
-    #projetos article {
-        flex: 1; /* Faz com que os dois projetos tenham o mesmo tamanho */
-        margin-bottom: 0;
-    }
-}
-
-/* Estilização das linhas divisórias */
-hr {
-    border: none; /* Remove a borda padrão tridimensional */
-    height: 1px; /* Define uma espessura bem fina */
-    background: linear-gradient(to right, transparent, var(--cor-destaque), transparent); /* Cria um efeito de linha que esmaece nas pontas */
-    margin: 40px 0; /* Dá um espaçamento limpo entre as seções */
-}
-
-/* Seção de Contato */
-#contato ul {
-    list-style: none; /* Remove as bolinhas da lista */
-    display: flex; /* Alinha os blocos lado a lado */
-    flex-wrap: wrap; /* Permite que os botões quebrem de linha em telas menores */
-    gap: 15px; /* Espaço entre os blocos */
-    padding: 0;
-    margin-top: 20px;
-}
-
-#contato li a {
-    display: inline-block;
-    background-color: var(--fundo-secundario); /* Cor de fundo do bloco */
-    color: var(--texto-principal);
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px; /* Cantos suavemente arredondados */
-    border: 1px solid dashed; /* Uma borda sutil */
-    border-color: var(--texto-secundario);
-    transition: all 0.3s ease; /* Transição suave para o efeito hover */
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-/* Efeito ao passar o mouse nos blocos de contato */
-#contato li a:hover {
-    background-color: var(--cor-destaque); /* Fundo vira ciano */
-    color: var(--fundo-principal); /* Texto fica escuro para dar contraste */
-    transform: translateY(-3px); /* Move o botão levemente para cima */
+nav a:hover {
+    color: var(--cor-destaque);
 }
 
-/* Estilização do Rodapé */
-footer {
-    text-align: center;
-    padding: 30px 0;
-    color: var(--texto-secundario);
-    font-size: 0.9rem; /* Texto ligeiramente menor */
-}
-
-/* Paleta Padrão: Modo Escuro */
-:root {
-    --fundo-principal: #121212;
-    --fundo-secundario: #1e1e1e;
-    --texto-principal: #ffffff;
-    --texto-secundario: #a0a0a0;
-    --cor-destaque: #00adb5;
-}
-
-/* Paleta Alternativa: Modo Claro */
-/* Quando o body tiver a classe .light-mode, estas variáveis entram em ação */
-body.light-mode {
-    --fundo-principal: #f9f9f9;
-    --fundo-secundario: #ffffff;
-    --texto-principal: #121212;
-    --texto-secundario: #555555;
-    --cor-destaque: #007a87; /* Um tom de ciano ligeiramente mais escuro para garantir contraste no fundo claro */
-}
-
-/* Estilização básica do botão de tema */
 .theme-btn {
     background: transparent;
     border: none;
@@ -178,14 +75,132 @@ body.light-mode {
 }
 
 .theme-btn:hover {
-    transform: scale(1.2); /* Um leve efeito de zoom ao passar o mouse */
+    transform: scale(1.2);
 }
 
-.prime {
-    color: #f9f9f9  ;
+/* 3. SEÇÃO SOBRE E BADGES */
+#sobre h3 {
+    margin-top: 20px;
+}
+
+.tech-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.badge {
+    background-color: var(--fundo-secundario);
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-destaque);
+    font-size: 0.9rem;
+}
+
+/* 4. SEÇÃO DE PROJETOS (MOBILE FIRST - SEM !IMPORTANT) */
+#projetos {
+    padding: 40px 0;
+}
+
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#projetos article {
+    background-color: var(--fundo-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-destaque);
+}
+
+.legenda-link {
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+    margin-top: 10px;
 }
 
 .img {
-    width: 50%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover na imagem */
+.img:hover {
+    transform: translateY(-5px);
+}
+
+/* 5. SEÇÃO DE CONTATO */
+#contato ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#contato li a {
+    display: inline-block;
+    background-color: var(--fundo-secundario);
+    color: var(--texto-principal);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid var(--texto-secundario); /* Corrigido de 'solid dashed' para apenas 'solid' */
+    transition: all 0.3s ease;
+}
+
+#contato li a:hover {
+    background-color: var(--cor-destaque);
+    color: var(--fundo-principal);
+    transform: translateY(-3px);
+}
+
+/* 6. DIVISÓRIAS E RODAPÉ */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--cor-destaque), transparent);
+    margin: 40px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+/* 7. MEDIA QUERIES (RESPONSIVIDADE) */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .theme-btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 600px) {
+    .projetos-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    #projetos article {
+        flex: 1 1 calc(50% - 20px); /* Ajusta para dois cards por linha no PC de forma limpa */
+    }
 }

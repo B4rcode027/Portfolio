@@ -24,3 +24,7 @@ botao.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');  // Salva "dark" no navegador
     }
 });
+
+// ano do footer
+
+document.getElementById("ano-atual").textContent = new Date().getFullYear();

@@ -2,7 +2,7 @@
 
 Olá! Este é o repositório do meu portfólio pessoal, um espaço onde apresento meus principais projetos, minhas habilidades técnicas e um pouco sobre a minha trajetória no desenvolvimento de software.
 
-O site está publicado e pode ser acessado em: **b4rcode027.github.io/Portfolio/**
+🔗 **Acesse o site publicado aqui:** [b4rcode027.github.io/Portfolio/](https://b4rcode027.github.io/Portfolio/)
 
 ---
 
@@ -11,7 +11,7 @@ O site está publicado e pode ser acessado em: **b4rcode027.github.io/Portfolio/
 O projeto foi desenvolvido de forma nativa para garantir leveza, alta performance e um design totalmente responsivo:
 
 * **HTML5:** Estruturação semântica do conteúdo.
-* **CSS3:** Estilização, layout (Flexbox/Grid) e animações modernas.
+* **CSS3:** Estilização, layout responsivo e animações modernas.
 * **JavaScript (ES6+):** Manipulação do DOM, interatividade e efeitos dinâmicos.
 
 ---
@@ -19,21 +19,18 @@ O projeto foi desenvolvido de forma nativa para garantir leveza, alta performanc
 ## ✨ Funcionalidades
 
 * **Design Responsivo:** Adaptado perfeitamente para dispositivos móveis, tablets e desktops.
-* **Modo Escuro/Claro:** Alternância de tema salva no navegador (LocalStorage).
+* **Modo Escuro/Claro:** Alternância de tema salva no navegador (`LocalStorage`).
 * **Animações Smooth Scroll:** Navegação suave entre as seções da página.
 
 ---
 
-   📬 Contato
+## 📬 Contato
+
 Vamos conversar? Você pode me encontrar em qualquer um dos canais abaixo:
 
-LinkedIn: Gabriel Pereira
-
-E-mail: gabfreiredev@gmail.com
-
-Instagram: @gb_gb_freire
-
-Desenvolvido com 💜 por Gabriel Pereira.
+* **LinkedIn:** [Gabriel Pereira](https://www.linkedin.com/in/gabriel-pereira-27272216a)
+* **E-mail:** [gabfreiredev@gmail.com](mailto:gabfreiredev@gmail.com)
+* **Instagram:** [@gb_gb_freire](https://www.instagram.com/gb_gb_freire)
 
 ---
 
@@ -43,4 +40,4 @@ Se quiser clonar este projeto e dar uma olhada no código de perto, siga os pass
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/B4rcode027/Portfolio.git](https://github.com/B4rcode027/Portfolio.git)
+   git clone [https://github.com/B4rcode027/Portfolio.git](https://github.com/B4rcode027/Portfolio.git)

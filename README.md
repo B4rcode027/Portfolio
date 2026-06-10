@@ -24,6 +24,19 @@ O projeto foi desenvolvido de forma nativa para garantir leveza, alta performanc
 
 ---
 
+   📬 Contato
+Vamos conversar? Você pode me encontrar em qualquer um dos canais abaixo:
+
+LinkedIn: Gabriel Pereira
+
+E-mail: gabfreiredev@gmail.com
+
+Instagram: @gb_gb_freire
+
+Desenvolvido com 💜 por Gabriel Pereira.
+
+---
+
 ## 🛠️ Como Executar o Projeto Localmente
 
 Se quiser clonar este projeto e dar uma olhada no código de perto, siga os passos abaixo:
@@ -31,14 +44,3 @@ Se quiser clonar este projeto e dar uma olhada no código de perto, siga os pass
 1. Clone o repositório:
    ```bash
    git clone https://github.com/B4rcode027/Portfolio.git](https://github.com/B4rcode027/Portfolio.git)
-
-   📬 Contato
-Vamos conversar? Você pode me encontrar em qualquer um dos canais abaixo:
-
-LinkedIn: Gabriel Pereira
-
-E-mail: gpereira2019@gmail.com
-
-Instagram: @gb_gb_freire
-
-Desenvolvido com 💜 por Gabriel Pereira.

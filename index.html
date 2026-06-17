@@ -11,99 +11,114 @@
     <meta property="og:description" content="Dando os primeiros passos no desenvolvimento web. Confira meus projetos!">
     <meta property="og:image" content="./primelar.jpeg">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="./icone.jpeg">
-    <title>Portfólio Gabriel</title>
+    <title>Portfólio Gabriel // Cyber Deck</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Portfólio Gabriel</h1>
-        <p>Desenvolvedor Web em Formação</p>
-        <nav>
-            <button id="toggle-theme" class="theme-btn" aria-label="Alternar tema">🌙</button>
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="header-left">
+            <div class="terminal-code">SRC_FILE // B4RCODE027_DECK</div>
+            <div class="system-location">LOC_STATUS: SÃO PAULO, BRASIL</div>
+            <div class="action-grid">
+            <button class="tech-btn" onclick="location.href='#projetos'">Ver Projetos</button>
+            <button class="tech-btn alt" onclick="location.href='#contato'">Contato</button>
+        </div>
+        </div>
+        <div class="system-time">SYS_LOG: 2026.06 // ONLINE</div>
     </header>
 
     <main>
+        <div class="intro-badge">:: INICIANDO CONEXÃO_</div>
         
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Me chamo Gabriel Pereira Freire, um jovem entusiasta de tecnologia e desenvolvimento web. Estou sempre buscando aprender novas habilidades e me aprimorar na área. Criei este portfólio para compartilhar meu trabalho com a comunidade e mostrar meu progresso, tanto para pessoas comuns quanto recrutadores.</p>
-            
-            <h3>Tecnologias e Ferramentas:</h3>
-            <div class="tech-badges">
-                <span class="badge">HTML5</span>
-                <span class="badge">CSS3</span>
-                <span class="badge">JavaScript (Básico)</span>
-                <span class="badge">Git & GitHub</span>
-            </div>
+        <div class="mainframe-title">
+            <h1>GABRIEL <span>PEREIRA FREIRE</span></h1>
+        </div>
 
-            <h3>Minhas Habilidades:</h3>
-            <ul>
-                <li>HTML5 (Estruturação de conteúdo)</li>
-                <li>Lógica de programação</li>
-                <li>Resolução de problemas</li>
-                <li>Vontade de aprender</li>
-                <li>Básico em JavaScript</li>
+        <section id="sobre" class="hero-desc">
+            <p>
+                Me chamo Gabriel Pereira Freire, um jovem entusiasta de tecnologia e desenvolvedor web em formação. Estou sempre buscando aprender novas habilidades e me aprimorar na área para criar soluções robustas e eficientes.
+            </p>
+        </section>
+
+        <div class="scanner-container">
+            <div class="scanner-line"></div>
+            <a href="https://prime.rebonato.com.br/" target="_blank" rel="noopener noreferrer" class="scanner-link-wrapper">
+                <div class="scanner-view">
+                    [ LINK_EXTERNO: PRIME LAR ]<br>
+                    <span style="font-size: 0.6rem; color: var(--text-secondary);">CLIQUE PARA EXECUTAR EM PRODUÇÃO</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="data-footer">
+            <div class="data-row">
+                <span class="data-label">CORE_STACK:</span>
+                <span class="data-value">HTML5 / CSS3 / JS (BÁSICO) / GIT</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">STATUS:</span>
+                <span class="data-value" style="color: var(--cyber-mint);">● DISPONÍVEL_PARA_APRENDIZADO</span>
+            </div>
+        </div>
+
+        <section id="projetos" class="system-section">
+            <div class="intro-badge" style="color: var(--cyber-mint);">02 // DIRETÓRIO_DE_PROJETOS</div>
+            <ul class="project-list">
+                <li><span style="color: var(--cyber-amber);">> 01_</span> Prime Lar Imobiliária (Site de exibição de imóveis de forma clara)</li>
+                <li><span style="color: var(--cyber-amber);">> 02_</span> Este Portfólio Cyber Deck (Interface industrial responsiva)</li>
+                <li><span style="color: var(--cyber-amber);">> 03_</span> Casa Do Chefe (Sistema complexo em desenvolvimento)</li>
             </ul>
         </section>
 
-        <hr>
-
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <p>Aqui estão alguns dos projetos que desenvolvi durante meus estudos:</p>
+        <section id="evolucao" class="system-section">
+            <div class="intro-badge" style="color: var(--cyber-amber);">03 // RELEASES_LOG (EVOLUÇÃO)</div>
             
-            <div class="projetos-container">
-                <article>
-                    <h3>1. Prime Lar Imobiliária</h3>
-                    <p>Como primeiro projeto, desenvolvi um site para uma imobiliária, focado em apresentar imóveis de forma clara e eficiente.</p>
-                    
-                    <figure>
-                        <a class="link" href="https://prime.rebonato.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site da Prime Lar Imobiliária">
-                            <div class="container-zoom">
-                                <img class="img" src="./primelar.jpeg" alt="Print da tela inicial do site Prime Lar Imobiliária mostrando a busca de imóveis">
-                            </div>
-                        </a>
-                        <figcaption class="legenda-link">Clique na imagem para acessar o site em produção.</figcaption>
-                    </figure>
-                </article>
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="version-tag">v2.0 - Core Interface</span>
+                        <span class="version-date">[ JUNHO_2026 ]</span>
+                        <p>Refatoração completa do layout. Migração para arquitetura em arquivos separados, expansão para tela cheia (Full Width), inclusão do log de evolução e dados técnicos fixados no cabeçalho.</p>
+                    </div>
+                </div>
 
-                <article>
-                    <h3>2. Este Portfólio Pessoal</h3>
-                    <p>Pensando em publicar meus projetos e experiências, desenvolvi este portfólio para compartilhar meu trabalho com a comunidade.</p>
-                </article>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="version-tag">v1.5 - Estética Cyber</span>
+                        <span class="version-date">[ MAIO_2026 ]</span>
+                        <p>Implementação do tema escuro industrial, adição da animação de escaneamento de imagem (scanner box) e integração inicial com fontes monoespaçadas.</p>
+                    </div>
+                </div>
 
-                <article>
-                    <h3>3. Casa Do Chefe</h3>
-                    <p>Ainda em produção, já conta com um projeto mais complexo do que os demais já feitos.</p>
-                </article>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="version-tag">v1.0 - Inicialização</span>
+                        <span class="version-date">[ ABRIL_2026 ]</span>
+                        <p>Primeiro deploy da estrutura base do portfólio. Tags semânticas de cabeçalho, sobre mim, listagem inicial de projetos e links de redes sociais funcionais.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <hr>
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Se você quiser conversar sobre tecnologia ou acompanhar minha jornada, me encontre em:</p>
-            <ul>
-                <li><a href="mailto:gpereira2019@gmail.com">E-mail</a></li>
-                <li><a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/gabriel-pereira-27272216a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            </ul>
+        <section id="contato" class="system-section" style="padding-bottom: 40px;">
+            <div class="intro-badge">04 // CANAIS_DE_CONEXÃO</div>
+            <div class="data-row"><span class="data-label">EMAIL:</span><span class="data-value"><a href="mailto:gpereira2019@gmail.com" class="mint-link">gpereira2019@gmail.com</a></span></div>
+            <div class="data-row"><span class="data-label">GITHUB:</span><span class="data-value"><a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer" class="plain-link">/B4rcode027</a></span></div>
+            <div class="data-row"><span class="data-label">LINKEDIN:</span><span class="data-value"><a href="https://www.linkedin.com/in/gabriel-pereira-27272216a" target="_blank" rel="noopener noreferrer" class="plain-link">/gabriel-pereira</a></span></div>
         </section>
-
     </main>
 
-    <footer class="footer">
-       <p>&copy; <span id="ano-atual"></span> Gabriel Pereira. Todos os direitos reservados.</p>
+    <footer class="system-footer">
+        <p>&copy; <span id="ano-atual">2026</span> Gabriel Pereira. [ Conexão Segura ]</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>

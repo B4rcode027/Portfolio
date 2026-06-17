@@ -1,22 +1,13 @@
-/* 1. CONFIGURAÇÕES GLOBAIS E VARIÁVEIS */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;900&family=Space+Mono&display=swap');
+
 :root {
-    --fundo-principal: #121212;
-    --fundo-secundario: #1e1e1e;
-    --texto-principal: #ffffff;
-    --texto-secundario: #a0a0a0;
-    --cor-destaque: #00adb5; 
-}
-
-body.light-mode {
-    --fundo-principal: #f9f9f9;
-    --fundo-secundario: #ffffff;
-    --texto-principal: #121212;
-    --texto-secundario: #555555;
-    --cor-destaque: #007a87;
-}
-
-html {
-    scroll-behavior: smooth;
+    --bg-main: #0c0d12;
+    --bg-surface: #131520;
+    --cyber-mint: #00ffaa;
+    --cyber-amber: #ffb703;
+    --text-primary: #e2e8f0;
+    --text-secondary: #64748b;
+    --border-color: rgba(0, 255, 170, 0.2);
 }
 
 * {
@@ -26,190 +17,348 @@ html {
 }
 
 body {
-    background-color: var(--fundo-principal);
-    color: var(--texto-principal);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* 2. HEADER E COMPONENTES */
-header {
-    text-align: center;
-    padding: 20px 0;
-}
-
-header p {
-    color: var(--texto-secundario);
-    margin-bottom: 20px;
-}
-
-nav {
-    background-color: var(--fundo-secundario);
-    padding: 12px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: var(--texto-principal);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: var(--cor-destaque);
-}
-
-.theme-btn {
-    background: transparent;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.theme-btn:hover {
-    transform: scale(1.2);
-}
-
-/* 3. SEÇÃO SOBRE E BADGES */
-#sobre h3 {
-    margin-top: 20px;
-}
-
-.tech-badges {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin: 15px 0;
-}
-
-.badge {
-    background-color: var(--fundo-secundario);
-    padding: 5px 12px;
-    border-radius: 20px;
-    border: 1px solid var(--cor-destaque);
-    font-size: 0.9rem;
-}
-
-/* 4. SEÇÃO DE PROJETOS (MOBILE FIRST - SEM !IMPORTANT) */
-#projetos {
-    padding: 40px 0;
-}
-
-.projetos-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    overflow-x: hidden;
+    position: relative;
 }
 
-#projetos article {
-    background-color: var(--fundo-secundario);
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid var(--cor-destaque);
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 40px;
+    width: 1px; 
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 255, 170, 0.1) 0%, transparent 100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
-.legenda-link {
-    font-size: 0.9rem;
-    color: var(--texto-secundario);
-    margin-top: 10px;
-}
-
-.img {
-    width: 300px;
-    max-width: 400px;
-    height: 200px;
-    border-radius: 6px;
-    margin-top: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-/* Efeito hover na imagem */
-.img:hover {
-    transform: scale(1.2);
-}
-
-.container-zoom {
-    width: 300px;
-    height: 200px;
-    overflow: hidden; /* Impede que a imagem aumentada vaze da área */
-    border-radius: 6px;
-}
-
-/* 5. SEÇÃO DE CONTATO */
-#contato ul {
-    list-style: none;
+/* --- HEADER (TELA CHEIA E LOCALIZAÇÃO NO TOPO) --- */
+header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 0;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    margin-bottom: 35px;
+    border-left: 3px solid var(--cyber-mint);
+    padding-left: 12px;
 }
 
-#contato li a {
-    display: inline-block;
-    background-color: var(--fundo-secundario);
-    color: var(--texto-principal);
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.terminal-code {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--cyber-mint);
+    letter-spacing: 1px;
+}
+
+.system-location {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--cyber-amber);
+    font-weight: bold;
+}
+
+.system-time {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+}
+
+/* --- MAIN CONTENT (CONFIGURADO PARA 1200PX FULL WIDTH) --- */
+main {
+    flex: 1;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.intro-badge {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--cyber-amber);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.mainframe-title {
+    background: var(--bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 4px solid var(--cyber-amber);
+    padding: 15px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.mainframe-title h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.mainframe-title h1 span {
+    color: var(--cyber-mint);
+    display: block;
+    font-size: 1.8rem;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+/* --- SCANNER BOX (FOTO/LINK DO PROJETO) --- */
+.scanner-container {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: rgba(19, 21, 32, 0.6);
+    border: 1px solid rgba(0, 255, 170, 0.1);
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scanner-link-wrapper {
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: 1px solid var(--texto-secundario); /* Corrigido de 'solid dashed' para apenas 'solid' */
-    transition: all 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
 }
 
-#contato li a:hover {
-    background-color: var(--cor-destaque);
-    color: var(--fundo-principal);
-    transform: translateY(-3px);
+.scanner-container::before, .scanner-container::after {
+    content: "+";
+    position: absolute;
+    font-family: 'Space Mono', monospace;
+    color: var(--cyber-mint);
+    font-size: 14px;
+    font-weight: bold;
 }
+.scanner-container::before { top: 5px; left: 8px; }
+.scanner-container::after { bottom: 5px; right: 8px; }
 
-/* 6. DIVISÓRIAS E RODAPÉ */
-hr {
-    border: none;
-    height: 1px;
-    background: linear-gradient(to right, transparent, var(--cor-destaque), transparent);
-    margin: 40px 0;
-}
-
-footer {
+.scanner-view {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--cyber-mint);
     text-align: center;
-    padding: 30px 0;
-    color: var(--texto-secundario);
-    font-size: 0.9rem;
+    letter-spacing: 3px;
+    animation: pulse 2.5s infinite;
 }
 
-/* 7. MEDIA QUERIES (RESPONSIVIDADE) */
-@media (max-width: 600px) {
-    nav {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .theme-btn {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5px;
-    }
+.scanner-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cyber-mint), transparent);
+    box-shadow: 0 0 8px var(--cyber-mint);
+    top: 0;
+    animation: scan 4s linear infinite;
+    pointer-events: none;
 }
 
-@media (min-width: 600px) {
-    .projetos-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    #projetos article {
-        flex: 1 1 calc(50% - 20px); /* Ajusta para dois cards por linha no PC de forma limpa */
-    }
+/* --- METADADOS --- */
+.data-footer {
+    border-top: 1px dashed rgba(255,255,255,0.1);
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+}
+
+.data-label { color: var(--text-secondary); }
+.data-value { color: var(--text-primary); }
+
+/* --- SEÇÕES E LISTAS ESTRUTURADAS --- */
+.system-section {
+    margin-top: 40px; 
+    border-top: 1px dashed rgba(255,255,255,0.1); 
+    padding-top: 20px;
+}
+
+.project-list {
+    list-style: none; 
+    font-family: 'Space Mono', monospace; 
+    font-size: 0.85rem; 
+    line-height: 1.8;
+}
+
+.mint-link {
+    color: var(--cyber-mint); 
+    text-decoration: none;
+}
+
+.plain-link {
+    color: var(--text-primary); 
+    text-decoration: none;
+}
+
+/* --- CONTROLES DE AÇÃO --- */
+.action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-bottom: 20px;
+    max-width: 480px; /* Mantém os botões em formato compacto e ergonômico */
+}
+
+.tech-btn {
+    background: transparent;
+    border: 1px solid var(--cyber-mint);
+    color: #ffffff;
+    padding: 14px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.tech-btn::after {
+    content: ">>";
+    position: absolute;
+    right: 15px;
+    color: var(--cyber-mint);
+}
+
+.tech-btn:active {
+    background: rgba(0, 255, 170, 0.15);
+    box-shadow: 0 0 10px rgba(0, 255, 170, 0.3);
+}
+
+.tech-btn.alt {
+    border-color: var(--text-secondary);
+    color: var(--text-secondary);
+}
+.tech-btn.alt::after { color: var(--text-secondary); content: "//"; }
+
+.tech-btn.alt:active {
+    border-color: var(--cyber-amber);
+    color: var(--cyber-amber);
+}
+
+/* --- RELEASES TIMELINE --- */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-family: 'Space Mono', monospace;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 1px;
+    height: calc(100% - 20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+    border: 2px solid var(--bg-main);
+}
+
+.timeline-item.active .timeline-marker {
+    background: var(--cyber-mint);
+    box-shadow: 0 0 8px var(--cyber-mint);
+}
+
+.timeline-content {
+    background: rgba(19, 21, 32, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 12px 15px;
+}
+
+.timeline-item.active .timeline-content {
+    border-left: 2px solid var(--cyber-mint);
+    background: rgba(0, 255, 170, 0.02);
+}
+
+.version-tag {
+    color: var(--cyber-mint);
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.version-date {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
+
+.timeline-content p {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    margin-top: 6px;
+    line-height: 1.4;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* --- FOOTER --- */
+.system-footer {
+    text-align: center; 
+    font-family: 'Space Mono', monospace; 
+    font-size: 0.65rem; 
+    color: var(--text-secondary); 
+    margin-top: auto;
+    padding-top: 20px;
+    z-index: 10;
+}
+
+/* --- ANIMAÇÕES CORES --- */
+@keyframes scan {
+    0% { top: 0%; }
+    50% { top: 100%; }
+    100% { top: 0%; }
+}
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
 }

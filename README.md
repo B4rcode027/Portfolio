@@ -12,11 +12,11 @@
 
 ## 🚀 Sobre Mim
 
-Olá! Eu sou o(a) **[Seu Nome]**, um(a) desenvolvedor(a) focado(a) em criar soluções web modernas, eficientes e visualmente atraentes. Atualmente estou focado(a) em tecnologias como **[Tecnologia 1, ex: React]**, **[Tecnologia 2, ex: Node.js]** e **[Tecnologia 3, ex: TypeScript]**.
+Olá! Eu sou o(a) **Gabriel Pereira Freire**, um(a) desenvolvedor(a) focado(a) em criar soluções web modernas, eficientes e visualmente atraentes. Atualmente estou focado(a) em tecnologias como **HTML, CSS3 E JavaScript**
 
-* 🔭 Atualmente trabalhando em: `[Seu projeto atual ou freelance]`
-* 🌱 Aprendendo no momento: `[Uma tecnologia que você está estudando]`
-* 🎯 Objetivo: `[Seu objetivo profissional, ex: Transição de carreira / Vaga Júnior]`
+* 🔭 Atualmente trabalhando em: `[FreeLancer]`
+* 🌱 Aprendendo no momento: `[HTML, CSS, JS]`
+* 🎯 Objetivo: `[melhorar cada dia mais para assim conseguir uma vaga como DEV JR]`
 
 ---
 
@@ -30,8 +30,6 @@ Aqui estão as principais tecnologias que utilizo no meu dia a dia:
 | ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) | ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat&logo=express) | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white) |
 | ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black) | ![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white) | ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white) |
 | ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) | ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) | ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white) |
-
-*(Nota: Você pode remover ou adicionar os escudos/badges acima mudando os nomes se preferir)*
 
 ---
 

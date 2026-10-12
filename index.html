@@ -5,30 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Gabriel Pereira, Desenvolvedor Web em formação. Conheça meus projetos e habilidades.">
     
+    <!-- Tags Hreflang para SEO (Devem ser idênticas em todas as páginas) -->
+    <link rel="alternate" hreflang="pt-BR" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/">
+    <link rel="alternate" hreflang="en" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/en/">
+    <link rel="alternate" hreflang="es" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/es/">
+    <link rel="alternate" hreflang="ru" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/ru/">
+    <link rel="alternate" hreflang="ja" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/ja/">
+    <link rel="alternate" hreflang="x-default" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/">
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://portfolio-nu-three-np6x63rjwo.vercel.app/"> 
     <meta property="og:title" content="Portfólio Gabriel | Dev Web">
     <meta property="og:description" content="Dando os primeiros passos no desenvolvimento web. Confira meus projetos!">
-    <meta property="og:image" content="./primelar.jpeg">
+    <meta property="og:image" content="/primelar.jpeg">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="./icone.jpeg">
+    <link rel="icon" href="/icone.jpeg">
     <title>Portfólio Gabriel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-    <header>
+    <header style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px;">
+        <!-- Lado Esquerdo -->
         <div class="header-left">
             <div class="terminal-code">SRC_FILE // B4RCODE027_DECK</div>
             <div class="system-location">LOC_STATUS: ESPIRITO SANTO, BRASIL</div>
             <div class="action-grid">
-            <button class="tech-btn" onclick="location.href='#projetos'">Ver Projetos</button>
-            <button class="tech-btn alt" onclick="location.href='#contato'">Contato</button>
+                <button class="tech-btn" onclick="location.href='#projetos'">Ver Projetos</button>
+                <button class="tech-btn alt" onclick="location.href='#contato'">Contato</button>
+            </div>
         </div>
+
+        <!-- Lado Direito (Seletor + Sys Log) -->
+        <div class="header-right" style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+            <div class="system-time">SYS_LOG: 2026.06 // ONLINE</div>
+            
+            <!-- Seletor de Idiomas -->
+            <select onchange="location = this.value;" aria-label="Selecionar Idioma" style="background: #111; color: #fff; border: 1px solid #333; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-family: monospace;">
+                <option value="/" selected>🇧🇷 PT</option>
+                <option value="/en/">🇺🇸 EN</option>
+                <option value="/es/">🇪🇸 ES</option>
+                <option value="/ru/">🇷🇺 RU</option>
+                <option value="/ja/">🇯🇵 JA</option>
+            </select>
         </div>
-        <div class="system-time">SYS_LOG: 2026.06 // ONLINE</div>
     </header>
 
     <main>
@@ -128,6 +150,6 @@
         <p>&copy; <span id="ano-atual">2026</span> Gabriel Pereira. [ Conexão Segura ]</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

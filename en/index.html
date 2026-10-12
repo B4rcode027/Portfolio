@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Gabriel Pereira, Web Developer in training. Discover my projects and skills.">
+    
+    <!-- Tags Hreflang (Idênticas em todas as páginas) -->
+    <link rel="alternate" hreflang="pt-BR" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/">
+    <link rel="alternate" hreflang="en" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/en/">
+    <link rel="alternate" hreflang="es" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/es/">
+    <link rel="alternate" hreflang="ru" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/ru/">
+    <link rel="alternate" hreflang="ja" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/ja/">
+    <link rel="alternate" hreflang="x-default" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio-nu-three-np6x63rjwo.vercel.app/en/"> 
+    <meta property="og:title" content="Gabriel Portfolio | Web Dev">
+    <meta property="og:description" content="Taking my first steps in web development. Check out my projects!">
+    <meta property="og:image" content="/primelar.jpeg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/icone.jpeg">
+    <title>Gabriel's Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px;">
+        <!-- Lado Esquerdo -->
+        <div class="header-left">
+            <div class="terminal-code">SRC_FILE // B4RCODE027_DECK</div>
+            <div class="system-location">LOC_STATUS: ESPIRITO SANTO, BRASIL</div>
+            <div class="action-grid">
+                <button class="tech-btn" onclick="location.href='#projetos'">Ver Projetos</button>
+                <button class="tech-btn alt" onclick="location.href='#contato'">Contato</button>
+            </div>
+        </div>
+
+        <!-- Lado Direito (Seletor + Sys Log) -->
+        <div class="header-right" style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+            <div class="system-time">SYS_LOG: 2026.06 // ONLINE</div>
+            
+            <!-- Seletor de Idiomas -->
+            <select onchange="location = this.value;" aria-label="Selecionar Idioma" style="background: #111; color: #fff; border: 1px solid #333; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-family: monospace;">
+                <option value="/" selected>🇧🇷 PT</option>
+                <option value="/en/">🇺🇸 EN</option>
+                <option value="/es/">🇪🇸 ES</option>
+                <option value="/ru/">🇷🇺 RU</option>
+                <option value="/ja/">🇯🇵 JA</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div class="intro-badge">:: INITIALIZING CONNECTION_</div>
+        
+        <div class="mainframe-title">
+            <h1>GABRIEL <span>PEREIRA FREIRE</span></h1>
+        </div>
+
+        <section id="sobre" class="hero-desc">
+            <p>
+                My name is Gabriel Pereira Freire, a young tech enthusiast and web developer in training. I am always looking to learn new skills and improve myself in the field to create robust and efficient solutions.
+            </p>
+        </section>
+
+        <div class="scanner-container">
+            <div class="scanner-line"></div>
+            <a href="https://prime.rebonato.com.br/" target="_blank" rel="noopener noreferrer" class="scanner-link-wrapper">
+                <div class="scanner-view">
+                    [ EXTERNAL_LINK: PRIME LAR ]<br>
+                    <span style="font-size: 0.6rem; color: var(--text-secondary);">CLICK TO RUN IN PRODUCTION</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="scanner-container">
+         <div class="scanner-line"></div>
+            <a href="https://casadochefe.rebonato.com.br/" target="_blank" rel="noopener noreferrer" class="scanner-link-wrapper">
+                <div class="scanner-view">
+                    [ EXTERNAL_LINK: CASA DO CHEFE ]<br>
+                    <span style="font-size: 0.6rem; color: var(--text-secondary);">CLICK TO RUN IN PRODUCTION</span>
+                </div>
+            </a>
+        </div>
+        <div class="data-footer">
+            <div class="data-row">
+                <span class="data-label">CORE_STACK:</span>
+                <span class="data-value">HTML5 / CSS3 / JS (BASIC) / GIT</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">STATUS:</span>
+                <span class="data-value" style="color: var(--cyber-mint);">● AVAILABLE_FOR_LEARNING</span>
+            </div>
+        </div>
+
+        <section id="projetos" class="system-section">
+            <div class="intro-badge" style="color: var(--cyber-mint);">02 // PROJECT_DIRECTORY</div>
+            <ul class="project-list">
+                <li><span style="color: var(--cyber-amber);">> 01_</span> Prime Lar Real Estate (Clear property display website)</li>
+                <li><span style="color: var(--cyber-amber);">> 02_</span> This Cyber Deck Portfolio (Responsive industrial interface)</li>
+                <li><span style="color: var(--cyber-amber);">> 03_</span> Casa Do Chefe (Complex system under development)</li>
+            </ul>
+        </section>
+
+        <section id="evolucao" class="system-section">
+            <div class="intro-badge" style="color: var(--cyber-amber);">03 // RELEASES_LOG (EVOLUTION)</div>
+            
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="version-tag">v2.0 - Core Interface</span>
+                        <span class="version-date">[ JUNE_2026 ]</span>
+                        <p>Complete layout refactoring. Migration to separate file architecture, expansion to full width, inclusion of evolution log and fixed header technical data.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="version-tag">v1.5 - Cyber Aesthetics</span>
+                        <span class="version-date">[ MAY_2026 ]</span>
+                        <p>Implementation of the industrial dark theme, addition of the image scanning animation (scanner box) and initial integration with monospaced fonts.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="version-tag">v1.0 - Initialization</span>
+                        <span class="version-date">[ APRIL_2026 ]</span>
+                        <p>First deploy of the portfolio base structure. Semantic header tags, about me, initial project list and functional social media links.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="system-section" style="padding-bottom: 40px;">
+            <div class="intro-badge">04 // CONNECTION_CHANNELS</div>
+            <div class="data-row"><span class="data-label">EMAIL:</span><span class="data-value"><a href="mailto:gabfreiredev@gmail.com" class="mint-link">gabfreiredev@gmail.com</a></span></div>
+            <div class="data-row"><span class="data-label">GITHUB:</span><span class="data-value"><a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer" class="plain-link">/B4rcode027</a></span></div>
+            <div class="data-row"><span class="data-label">LINKEDIN:</span><span class="data-value"><a href="https://www.linkedin.com/in/gabriel-pereira-27272216a" target="_blank" rel="noopener noreferrer" class="plain-link">/gabriel-pereira</a></span></div>
+        </section>
+    </main>
+
+    <footer class="system-footer">
+        <p>&copy; <span id="ano-atual">2026</span> Gabriel Pereira. [ Secure Connection ]</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>

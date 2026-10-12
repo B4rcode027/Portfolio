@@ -38,19 +38,5 @@ Vamos conversar? Você pode me encontrar em qualquer um dos canais abaixo:
 
 * 💼 **LinkedIn:** [Gabriel Pereira](https://www.linkedin.com/in/gabriel-pereira-27272216a)
 * 📧 **E-mail:** [gabfreiredev@gmail.com](mailto:gabfreiredev@gmail.com)
-* 📸 **Instagram:** [@gb_gb_freire](https://www.instagram.com/gb_gb_freire)
 
 ---
-
-## 📦 Como rodar o projeto localmente
-
-Se quiser baixar e rodar este portfólio na sua máquina, siga os passos abaixo:
-
-```bash
-# 1. Clone este repositório
-$ git clone [https://github.com/](https://github.com/)[seu-usuario]/[nome-do-repositorio].git
-
-# 2. Acesse a pasta do projeto
-$ cd [nome-do-repositorio]
-
-# 3. Abra o arquivo principal (geralmente index.html) no seu navegador ou use a extensão Live Server do VS Code

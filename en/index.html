@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Gabriel Pereira, Web Developer in training. Discover my projects and skills.">
-    
+
     <!-- Tags Hreflang (Idênticas em todas as páginas) -->
     <link rel="alternate" hreflang="pt-BR" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/">
     <link rel="alternate" hreflang="en" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/en/">
@@ -14,11 +14,11 @@
     <link rel="alternate" hreflang="x-default" href="https://portfolio-nu-three-np6x63rjwo.vercel.app/">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://portfolio-nu-three-np6x63rjwo.vercel.app/en/"> 
+    <meta property="og:url" content="https://portfolio-nu-three-np6x63rjwo.vercel.app/en/">
     <meta property="og:title" content="Gabriel Portfolio | Web Dev">
     <meta property="og:description" content="Taking my first steps in web development. Check out my projects!">
     <meta property="og:image" content="/primelar.jpeg">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="/icone.jpeg">
@@ -27,35 +27,52 @@
 </head>
 <body>
 
-    <header style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px;">
+    <header>
         <!-- Lado Esquerdo -->
         <div class="header-left">
             <div class="terminal-code">SRC_FILE // B4RCODE027_DECK</div>
             <div class="system-location">LOC_STATUS: ESPIRITO SANTO, BRASIL</div>
             <div class="action-grid">
-                <button class="tech-btn" onclick="location.href='#projetos'">Ver Projetos</button>
-                <button class="tech-btn alt" onclick="location.href='#contato'">Contato</button>
+                <button class="tech-btn" onclick="location.href='#projetos'">View Projects</button>
+                <button class="tech-btn alt" onclick="location.href='#contato'">Contact</button>
             </div>
         </div>
 
-        <!-- Lado Direito (Seletor + Sys Log) -->
-        <div class="header-right" style="display: flex; flex-direction: column; align-items: flex-end; gap: 10px;">
+        <!-- Lado Direito -->
+        <div class="header-right">
             <div class="system-time">SYS_LOG: 2026.06 // ONLINE</div>
-            
-            <!-- Seletor de Idiomas -->
-            <select onchange="location = this.value;" aria-label="Selecionar Idioma" style="background: #111; color: #fff; border: 1px solid #333; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-family: monospace;">
-                <option value="/" selected>🇧🇷 PT</option>
-                <option value="/en/">🇺🇸 EN</option>
-                <option value="/es/">🇪🇸 ES</option>
-                <option value="/ru/">🇷🇺 RU</option>
-                <option value="/ja/">🇯🇵 JA</option>
-            </select>
+
+            <div class="header-tools">
+                <!-- Redes sociais -->
+                <nav class="social-links" aria-label="Social links">
+                    <a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer">[ GITHUB ]</a>
+                    <a href="https://www.linkedin.com/in/gabriel-pereira-27272216a" target="_blank" rel="noopener noreferrer">[ LINKEDIN ]</a>
+                    <a href="mailto:gabfreiredev@gmail.com">[ EMAIL ]</a>
+                </nav>
+
+                <!-- Seletor de idioma -->
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <button type="button" class="lang-current" id="lang-current" aria-haspopup="true" aria-expanded="false">
+                        <img id="lang-current-flag" src="https://flagcdn.com/w40/br.png" alt="" width="20" height="14">
+                        <span id="lang-current-code">PT</span>
+                        <span class="lang-arrow">▾</span>
+                    </button>
+
+                    <ul class="lang-menu">
+                        <li><a href="/index.html" data-code="PT" data-flag="br"><img src="https://flagcdn.com/w40/br.png" alt="" width="20" height="14"> PT // Português</a></li>
+                        <li><a href="/en/" data-code="EN" data-flag="us"><img src="https://flagcdn.com/w40/us.png" alt="" width="20" height="14"> EN // English</a></li>
+                        <li><a href="/es/" data-code="ES" data-flag="es"><img src="https://flagcdn.com/w40/es.png" alt="" width="20" height="14"> ES // Español</a></li>
+                        <li><a href="/ru/" data-code="RU" data-flag="ru"><img src="https://flagcdn.com/w40/ru.png" alt="" width="20" height="14"> RU // Русский</a></li>
+                        <li><a href="/ja/" data-code="JA" data-flag="jp"><img src="https://flagcdn.com/w40/jp.png" alt="" width="20" height="14"> JA // 日本語</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
         <div class="intro-badge">:: INITIALIZING CONNECTION_</div>
-        
+
         <div class="mainframe-title">
             <h1>GABRIEL <span>PEREIRA FREIRE</span></h1>
         </div>
@@ -77,7 +94,7 @@
         </div>
 
         <div class="scanner-container">
-         <div class="scanner-line"></div>
+            <div class="scanner-line"></div>
             <a href="https://casadochefe.rebonato.com.br/" target="_blank" rel="noopener noreferrer" class="scanner-link-wrapper">
                 <div class="scanner-view">
                     [ EXTERNAL_LINK: CASA DO CHEFE ]<br>
@@ -85,6 +102,7 @@
                 </div>
             </a>
         </div>
+
         <div class="data-footer">
             <div class="data-row">
                 <span class="data-label">CORE_STACK:</span>
@@ -107,7 +125,7 @@
 
         <section id="evolucao" class="system-section">
             <div class="intro-badge" style="color: var(--cyber-amber);">03 // RELEASES_LOG (EVOLUTION)</div>
-            
+
             <div class="timeline">
                 <div class="timeline-item active">
                     <div class="timeline-marker"></div>
@@ -140,9 +158,12 @@
 
         <section id="contato" class="system-section" style="padding-bottom: 40px;">
             <div class="intro-badge">04 // CONNECTION_CHANNELS</div>
-            <div class="data-row"><span class="data-label">EMAIL:</span><span class="data-value"><a href="mailto:gabfreiredev@gmail.com" class="mint-link">gabfreiredev@gmail.com</a></span></div>
-            <div class="data-row"><span class="data-label">GITHUB:</span><span class="data-value"><a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer" class="plain-link">/B4rcode027</a></span></div>
-            <div class="data-row"><span class="data-label">LINKEDIN:</span><span class="data-value"><a href="https://www.linkedin.com/in/gabriel-pereira-27272216a" target="_blank" rel="noopener noreferrer" class="plain-link">/gabriel-pereira</a></span></div>
+
+            <div class="contact-list">
+                <a href="mailto:gabfreiredev@gmail.com" class="contact-link">EMAIL:</a>
+                <a href="https://github.com/B4rcode027" target="_blank" rel="noopener noreferrer" class="contact-link">GITHUB:</a>
+                <a href="https://www.linkedin.com/in/gabriel-pereira-27272216a" target="_blank" rel="noopener noreferrer" class="contact-link">LINKEDIN:</a>
+            </div>
         </section>
     </main>
 

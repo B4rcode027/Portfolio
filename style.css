@@ -45,7 +45,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    z-index: 10;
+    position: relative;
+    z-index: 50;
     margin-bottom: 35px;
     border-left: 3px solid var(--cyber-mint);
     padding: 20px;
